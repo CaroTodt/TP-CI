@@ -8,7 +8,7 @@ install:
 - php artisan migrate
 sudo: false
 before_install:
-- mysql -e 'CREATE DATABASE IF NOT EXISTS laravelangular;'
+##- mysql -e 'CREATE DATABASE IF NOT EXISTS laravelangular;'
 before_script:
 - phantomjs --webdriver=127.0.0.1:9515 &
 - php artisan serve --port=8081 &
